@@ -40,5 +40,12 @@ sql = <<-SQL
 
 end
 
+def self.create(name:,grade:)
+  student.new(name,grade)
+  student.save
+  student
+end
+
+
 
 end
