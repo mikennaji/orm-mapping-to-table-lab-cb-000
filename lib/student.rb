@@ -10,7 +10,7 @@ def initialize(name,grade,id=nil)
 end
 
 def self.create_table
-  sql = <<-SQL 
+  sql = <<-SQL
    CREATE TABLE IF NOT EXISTS students (
     id PRIMARY KEY INTEGER,
     name TEXT,
